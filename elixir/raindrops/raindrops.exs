@@ -18,7 +18,7 @@ defmodule Raindrops do
   def convert(number) do
     string = number_to_string(number)
 
-    if string == "", do: Integer.to_string(number), else: string
+    if string == "", do: to_string(number), else: string
   end
 
   defp number_to_string(number) do
